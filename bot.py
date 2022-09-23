@@ -45,7 +45,7 @@ async def random(call: types.CallbackQuery):
 #     return "!", 200
 
 @server.route("/")
-def webhook():
+async def webhook():
     await bot.set_webhook(url='https://myapplicationtelegrambot.herokuapp.com/' + TOKEN)
     return "!", 200
 
