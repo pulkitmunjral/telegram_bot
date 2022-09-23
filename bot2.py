@@ -8,11 +8,12 @@ dp = Dispatcher(bot)
 
 
 def make_keyboard(button_list, call_back_function):
-    buttons = []
-    for button_name in button_list:
-        button = InlineKeyboardButton(text=button_name, callback_data=call_back_function)
-        buttons.append(button)
-    keyboard_inline = InlineKeyboardMarkup().add(button for button in buttons)
+    # buttons = []
+    # for button_name in button_list:
+    #     button = InlineKeyboardButton(text=button_name, callback_data=call_back_function)
+    #     buttons.append(button)
+    button = InlineKeyboardButton(text="button_name", callback_data="env")
+    keyboard_inline = InlineKeyboardMarkup().add(button)
     return keyboard_inline
 
 
