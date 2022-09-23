@@ -25,7 +25,7 @@ async def welcome(message: types.Message):
 
 
 @dp.callback_query_handler(text=["env"])
-async def random(call: types.CallbackQuery):
+async def env(call: types.CallbackQuery):
     env = {"telemedia_env": ["PT", "SIT"]}
     call_back_function = "random"
     keyboard_inline = make_keyboard(env[str(call.message) + "_env"], call_back_function)
